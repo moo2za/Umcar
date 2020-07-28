@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="”utf-8”" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="”author”" content="”HyunJu" Kim” />
-    <meta name="”description”" content="”Insiders" Webpage clone” />
+    <meta name="author" content="HyunJu Kim" />
+    <meta name="description" content="Umcar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/0bd04aa0f2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Main | Umcar Clone</title>
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+      integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
+      crossorigin="anonymous"
+    />
+    <title>엄카</title>
   </head>
 
   <body>
     <nav class="nav">
       <div class="nav__main">
         <a href="index.html" class="nav__list-link">
-          <img class="s-icon" src="dist/images/umking.jpg" />
+          <img class="s-icon" src="dist/images/logo.png" />
         </a>
       </div>
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="about.html" class="nav__list-link">
-            <div class="nav__title">ABOUT</div>
-          </a>
+          <button id="1" type="button">ABOUT</button>
         </li>
         <li class="nav__list-item">
-          <a href="service.html" class="nav__list-link">
-            <div class="nav__title">SERVICE</div>
-          </a>
+          <button id="2" type="button">SERVICE</button>
         </li>
-        <li class="nav__list-item">
+        <!-- <li class="nav__list-item">
           <a href="review.html" class="nav__list-link">
             <div class="nav__title">REVIEW</div>
           </a>
-        </li>
+        </li> -->
         <li class="nav__list-item">
-          <a href="apply.html" class="nav__list-link">
-            <div class="nav__title">APPLY</div>
-          </a>
+          <button id="3" type="button">APPLY</button>
         </li>
-        <li class="nav__list-item">
+        <!-- <li class="nav__list-item">
           <a href="members.html" class="nav__list-link">
             <div class="nav__title">MEMBERS</div>
           </a>
@@ -51,7 +52,7 @@
           <a href="partners.html" class="nav__list-link">
             <div class="nav__title">PARTNERS</div>
           </a>
-        </li>
+        </li> -->
       </ul>
     </nav>
 
@@ -64,21 +65,19 @@
           <span class="index__first-ment ment2"
             >나에게 맞는 운전 선생님을 쉽고 안전하게 찾아보세요!</span
           >
+          <img class="s-icon" src="dist/images/logo.png" />
         </li>
 
         <li class="index__second">
           <div class="index__second-title">
             <span class="second-title">왜 엄카일까요?</span>
             <div class="divider">
-              <hr
-                class="hr__narrow hr__color"
-                style="margin: 0 auto 2px purple;"
-              />
+              <hr class="hr__narrow hr__color" />
             </div>
           </div>
           <div class="second-content">
             <div class="index__second-content">
-              <i class="far fa-lightbulb"></i>
+              <i class="fas fa-mobile-alt"></i>
               <span class="content-title">간편한 접근</span>
               <span class="content-content">
                 엄카는 어플을 통해 뛰어난 접근성을 자랑하며 가입방법과 매칭방식
@@ -86,7 +85,7 @@
               </span>
             </div>
             <div class="index__second-content1">
-              <i class="fas fa-rocket"></i>
+              <i class="far fa-credit-card"></i>
               <span class="content-title">합리적인 가격</span>
               <span class="content-content">
                 엄카는 강사와 대화를 통해 함께 교육비를 정하기 때문에 일반
@@ -94,7 +93,7 @@
               </span>
             </div>
             <div class="index__second-content">
-              <i class="fas fa-users"></i>
+              <i class="fas fa-user-shield"></i>
               <span class="content-title">높은 안전성</span>
               <span class="content-content">
                 엄카는 모든 강사들의 운전 실력, 전과 등을 직접 확인한 뒤
@@ -106,80 +105,131 @@
         </li>
 
         <li class="index__third">
-          <span class="forth__title">엄카는 어떻게 진행되나요?</span>
-          <div class="forth__container">
-            <span class="forth__content"
-              >저희 운전할 시간에서는 어플을 통해 쉽게 접근이 가능합니다. 또한
-              운전 강사들은 저희 엄카 면접을 통해 선별되며, 강사들의 프로필을
-              확인해본 뒤 직접 선택할 수 있습니다. 날짜와 시간, 장소와 서로
-              합의하여 결정할 수 있으며, 연습할 수 있는 차를 보유한 경우에는 더
-              저렴한 가격에 교육을 받을 수 있습니다.
-            </span>
+          <div class="third__title">엄카는 어떻게 진행되나요?</div>
+          <div class="third__container">
+            <div class="third__process">
+              <div class="discription-title">① 다운로드</div>
+              <div class="discription-content">
+                앱스토어에서 '엄카'를 다운받습니다.
+              </div>
+              <img class="s-icon" src="dist/images/app1.PNG" />
+            </div>
+            <div class="third__process">
+              <div class="discription-title">② 회원가입</div>
+              <div class="discription-content">
+                엄마(교육자)/자식(피교육자)을 선택하고 정보를 입력합니다.
+              </div>
+              <img class="s-icon" src="dist/images/app1.PNG" />
+            </div>
+            <div class="third__process">
+              <div class="discription-title">③ 조건기입</div>
+              <div class="discription-content">
+                원하는 날짜, 시간, 장소를 입력하고 조건에 맞는 교육자를
+                찾습니다.
+              </div>
+              <img class="s-icon" src="dist/images/app1.PNG" />
+            </div>
+            <div class="third__process">
+              <div class="discription-title">④ 입금</div>
+              <div class="discription-content">
+                매칭이 완료되면 가상계좌로 입금만 하면 끝
+              </div>
+              <img class="s-icon" src="dist/images/app1.PNG" />
+            </div>
           </div>
         </li>
 
-        <li class="index__forth">
+        <!-- <li class="index__forth">
           <span class="forth__title">엄카 1차 서포터즈 후기</span>
           <div class="forth__container">
             <span class="forth__content">룰루랄라</span>
           </div>
-        </li>
+        </li> -->
 
         <li class="index__fifth">
-          <span class="fifth__content">두번째 자식은 바로 당신입니다.</span>
+          <div class="fifth__content">
+            <div class="fifth__ment">APPLY</div>
+            <form
+              class="gform"
+              method="POST"
+              data-email="example@email.net"
+              action="https://script.google.com/macros/s/AKfycbx2MrNk3vSeANHpslTdnJUDmgBuVRGU73qO9db-_hRjS_0ZLYM/exec"
+            >
+              <div class="fifth__input">
+                <div class="fifth__title">이름</div>
+                <input type="text" name="name" />
+              </div>
+              <div class="fifth__input">
+                <div class="fifth__title">이메일</div>
+                <input type="text" name="email" />
+              </div>
+              <input type="submit" class="submit" />
+              <div style="display: none;" class="thankyou_message">
+                <h2>
+                  신청해주셔서 감사합니다!
+                </h2>
+              </div>
+            </form>
+          </div>
         </li>
-        <li class="index__sixth">
+
+        <!-- <li class="index__sixth">
           <span class="fifth__content">MEMBERS</span>
-        </li>
+        </li> -->
       </ul>
     </div>
 
-    <div class="scroll">
-      <a href="#">
-        <i class="fas fa-chevron-up"></i>
-      </a>
-    </div>
-
     <div class="sub">
-      <div class="sub__lists">
-        <div class="sub__identity">
-          <img class="m-icon" src="dist/images/umking.jpg" />
-          <div class="sub__left">
-            <span class="sub__ment">엄마처럼 친절하게 알려주는</span>
-            <span class="sub__ment">1:1 운전교육 매칭 플랫폼, 엄카입니다.</span>
-          </div>
-        </div>
-
-        <div class="sub__contact">
-          <div class="sub__right">
-            <div class="sub__mail">
-              <i class="far fa-envelope"></i>
-              <span class="sub__ment">umcar@umcar.com</span>
-            </div>
-            <div class="sub__phone">
-              <i class="fas fa-phone-alt"></i>
-              <div class="sub__comment">
-                <span class="sub__ment">010.2650.5436</span>
-              </div>
-            </div>
-          </div>
-          <div class="sub__icon">
-            <div class="sub__sns">
-              <a href="https://www.facebook.com/SmartINSIDers" class="icon">
+      <div class="sub__contact">
+        <div class="sub__icon">
+          <div class="sub__sns">
+            <div class="facebook">
+              <a href="http://bitly.kr/0Ve2P0c2qSa" class="icon">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/insiders_mafia/" class="icon">
-                <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="instagram">
+              <a href="https://www.instagram.com/mother___car/" class="icon">
+                <i class="fab fa-instagram"></i>
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="sub__information">
+        <div class="sub__service">
+          <div class="sub__ment">Company | 인세이프</div>
+        </div>
+        <div class="sub__ceo">
+          <div class="sub__ment">CEO | 정상호</div>
+        </div>
+        <div class="sub__address">
+          <div class="sub__ment">
+            Address | 서울특별시 성북구 고려대로 99-14 파이빌, S203호
+          </div>
+        </div>
+        <div class="sub__phone">
+          <div class="sub__ment">Tel | 010-2650-5436</div>
+        </div>
+        <div class="sub__mail">
+          <div class="sub__ment">E-mail | insiders_insafe@naver.com</div>
+        </div>
+        <div class="sub__copyright">
+          <div class="sub__ment">
+            Copyright ⓒ 2020 엄카 | 1:1 운전교육 매칭 플랫폼 All rights
+            reserved.
+          </div>
+        </div>
+        <div class="sub__last">
+          <div class="sub__ment1">사용자 이용약관</div>
+          <div class="sub__ment2">개인정보 취급방침</div>
         </div>
       </div>
     </div>
 
     <a
       class="kakaoButton"
-      href="https://open.kakao.com/o/sxuhYqkc"
+      href="https://open.kakao.com/o/s6TNcBnc"
       target="_blank"
       style="user-select: auto;"
     >
@@ -190,7 +240,14 @@
           style="user-select: auto;"
         />
       </div>
-      <div class="kakaoDesktop" style="user-select: auto;">1:1 문의하기</div>
+      <div class="kakaoDesktop" style="user-select: auto;">엄카 고객센터</div>
     </a>
+
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+    ></script>
+    <script src="js/randing.js"></script>
   </body>
 </html>

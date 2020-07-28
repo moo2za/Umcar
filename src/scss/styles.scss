@@ -1,6 +1,5 @@
 @import "reset";
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&Nanum+Gothic:wght@400;700;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -267,7 +266,7 @@ html {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-top: 190px;
+      padding-top: 360px;
       .index__first-ment {
         color: black;
         font-weight: 700;
@@ -309,7 +308,8 @@ html {
     display: flex;
     flex-direction: column;
     height: 800px;
-    padding: 150px 150px 90px 150px;
+
+    padding: 150px 100px 90px 100px;
     background: #ffe16f;
     border: solid 1px rgb(231, 231, 231);
     .index__second-title {
@@ -329,6 +329,7 @@ html {
     }
     .second-content {
       display: flex;
+      width: 100%;
       .index__second-content,
       .index__second-content1 {
         width: 33%;
@@ -386,7 +387,7 @@ html {
       .content-title {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 20px 0px;
         font-size: 22px;
         font-weight: 700;
         line-height: 30px;
@@ -408,7 +409,6 @@ html {
     background-color: white;
     display: flex;
     flex-direction: column;
-    line-height: 40px;
     color: black;
     text-align: center;
     padding: 0px 90px;
@@ -424,11 +424,16 @@ html {
         width: 250px;
         margin: 0px 10px;
         .discription-title {
+          padding: 10px 0px 30px 0px;
           font-weight: 600;
           font-size: 20px;
         }
+        .discription-content {
+          padding: 10px 0px;
+        }
         img {
           width: 230px;
+          margin-top: 20px;
         }
       }
     }
@@ -502,6 +507,7 @@ html {
         & input {
           margin: 30px 140px 0px 50px;
           height: 40px;
+          font-family: "Nanum Godic";
         }
       }
       .submit {
@@ -655,6 +661,7 @@ html {
   align-items: center;
   justify-content: center;
   color: black;
+  font-family: "Noto Serif KR";
   .kakaoCircle {
     width: 35px;
     height: 35px;

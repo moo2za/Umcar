@@ -13,7 +13,7 @@ a {
 
 body {
   min-width: 200px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Serif KR", "Noto Sans KR", sans-serif;
 }
 
 html {
@@ -374,7 +374,7 @@ html {
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     .sub__service,
     .sub__ceo,
     .sub__address,
@@ -388,24 +388,19 @@ html {
     .sub__last {
       display: flex;
       justify-content: center;
+      .sub__box {
+        margin: 0px 20px;
+      }
       .sub__ment1 {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
         color: white;
         font-size: 13px;
-        padding-right: 10px;
         font-weight: 600;
       }
       .sub__ment2 {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         color: white;
         font-size: 13px;
-        padding-left: 10px;
         font-weight: 600;
       }
     }
